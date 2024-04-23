@@ -9,7 +9,7 @@ description: ''
 keywords:
 author: 西瓜水果
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -21,6 +21,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
+root: /
 source_dir: source
 public_dir: public
 tag_dir: tags
