@@ -103,5 +103,5 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/xiguashuiguo/xiguashuiguo.github.io
-  branch: main
+  repo: git@github.com:xiguashuiguo/xiguashuiguo.github.io.git
+  branch: gh-pages
