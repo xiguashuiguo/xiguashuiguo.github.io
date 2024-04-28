@@ -156,6 +156,73 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://xiguashuiguo.github.io/2024/04/24/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E7%B3%BB%E5%88%97%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="西瓜水果">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="西瓜水果个人站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/04/24/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E7%B3%BB%E5%88%97%E4%BA%8C/" class="post-title-link" itemprop="url">前端构建系列二</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-04-24 09:30:00 / 修改时间：09:31:19" itemprop="dateCreated datePublished" datetime="2024-04-24T09:30:00+08:00">2024-04-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" itemprop="url" rel="index"><span itemprop="name">前端工程化</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://xiguashuiguo.github.io/2024/04/23/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E7%B3%BB%E5%88%97%E4%B8%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -179,10 +246,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-04-23 11:13:11 / 修改时间：15:41:07" itemprop="dateCreated datePublished" datetime="2024-04-23T11:13:11+08:00">2024-04-23</time>
+              <time title="创建时间：2024-04-23 11:13:11" itemprop="dateCreated datePublished" datetime="2024-04-23T11:13:11+08:00">2024-04-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-04-28 10:07:53" itemprop="dateModified" datetime="2024-04-28T10:07:53+08:00">2024-04-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -247,6 +320,7 @@
 └── package.json
 </code></pre>
 <p>上面展示了大致的目录结构（不重要的相关文件略去）。</p>
+<p>之前各个项目代码分散在不同的git仓库之中，导致了很多问题，如无法共享配置与规则、二方包无法共享等，当前前端的主流都在向monorepo方向发展，所以本次构建改造梳理，也是向着同样的趋势发展，所采用的技术栈主要是 <a target="_blank" rel="noopener" href="https://pnpm.io/zh/workspaces">pnpm workspace</a>以及 <a target="_blank" rel="noopener" href="https://turbo.build/repo/docs">turborepo</a>（不过鉴于目前的构建流程，turborepo 的许多缓存加速能力并没有用到，后续迭代再看）。</p>
 <h4 id="部署相关"><a href="#部署相关" class="headerlink" title="部署相关"></a>部署相关</h4><p>为了统一各个环境的部署任务，决定使用下面俩种方式</p>
 <ul>
 <li>正式发布环境，统一使用容器化部署</li>
@@ -334,7 +408,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
